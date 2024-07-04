@@ -171,7 +171,7 @@ echo; $SSH_EXEC root@${BASTION_HOSTNAME} "oc get nodes"
 echo -e "\n======> Updating Redhat server Credential on Cluster: "
 CONNECT_BASTION="$SSH_EXEC root@${BASTION_IP}"
 $CONNECT_BASTION "oc get secret/pull-secret -n openshift-config --template='{{index .data \".dockerconfigjson\" | base64decode}}' > global_pull_secret.yaml"
-$CONNECT_BASTION "oc registry login --registry=\"registry.redhat.io\" --auth-basic=\"vtas-eng:V4La@24!\" --to=global_pull_secret.yaml"
+$CONNECT_BASTION "oc registry login --registry=\"registry.redhat.io\" --auth-basic=\"<user:password>\" --to=global_pull_secret.yaml"
 $CONNECT_BASTION "oc registry login --registry=\"registry.connect.redhat.com\" --auth-basic=\"vtas-eng:V4La@24!\" --to=global_pull_secret.yaml"
 $CONNECT_BASTION "oc set data secret/pull-secret -n openshift-config --from-file=.dockerconfigjson=global_pull_secret.yaml"
 
