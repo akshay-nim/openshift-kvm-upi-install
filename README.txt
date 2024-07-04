@@ -12,7 +12,7 @@ KVM host: <server-name>
 Out of them Need to add below aliases for one IP
 cluster-name="<hostname of this IP>  (without FQDN)"
     For example:
-<ip-address>  api-int.<cluster-name>.vxindia.veritas.com   api.<cluster-name>.vxindia.veritas.com   *.apps.<cluster-name>.vxindia.veritas.com
+<ip-address>  api-int.<cluster-name>.<domain>   api.<cluster-name>.<domain>   *.apps.<cluster-name>.<domain>
 
 
 
