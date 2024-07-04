@@ -1,7 +1,7 @@
 #!/bin/bash 
 ########################################################################################
 # PURPOSE   : Configure Openshift UPI cluster on KVM (Public IP)
-# CONTACT   : AkshayNimbalkar@veritas.com
+# CONTACT   : nimbalkara42@gmail.com
 # CREATED   : 03/06/2024
 ########################################################################################
 
